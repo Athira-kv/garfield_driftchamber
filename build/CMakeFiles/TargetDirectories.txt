@@ -1,0 +1,3 @@
+/u/athirak2/Gem/build/CMakeFiles/Gem.dir
+/u/athirak2/Gem/build/CMakeFiles/edit_cache.dir
+/u/athirak2/Gem/build/CMakeFiles/rebuild_cache.dir

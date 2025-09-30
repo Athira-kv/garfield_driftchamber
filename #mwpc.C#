@@ -1,0 +1,154 @@
+#include <cstdlib>
+#include <iostream>
+#include <vector>
+#include <cstring>
+#include <TROOT.h>
+#include <TApplication.h>
+#include "TCanvas.h"
+#include "Garfield/MediumMagboltz.hh"
+#include "Garfield/ComponentAnalyticField.hh"
+#include "Garfield/Sensor.hh"
+#include "Garfield/TrackHeed.hh"
+#include "Garfield/DriftLineRKF.hh"
+#include "Garfield/ViewField.hh"
+#include "Garfield/ViewCell.hh"
+#include "Garfield/ViewDrift.hh"
+#include "Garfield/FundamentalConstants.hh"
+#include "Garfield/Random.hh"
+#include "Garfield/ViewMedium.hh"
+#include "Garfield/ComponentFieldMap.hh"
+
+using namespace Garfield;
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	//visualization
+	TApplication app("app",&argc,argv);
+
+	//Switch between cathod_gap(true) or sense_gap(false)
+	//bool flag = true;
+
+	//set distance of sense wires[cm] 
+	constexpr double gap_sense = 2;
+
+	//set wire diameters[cm]
+	constexpr double sense_dia = 0.0025;  //sense
+    constexpr double gate_dia = 0.01;  //gate
+
+	//Voltages Setting[V]
+	constexpr double vs = 1300.;   //sense
+    constexpr double vg = 0.;      //gate
+
+	//set gas
+	const int ncoll = 10;
+	MediumMagboltz gas;
+	gas.SetComposition("argon",90,"methane",10);
+	gas.SetTemperature(293.15);
+	gas.SetPressure(637.55);
+	gas.GenerateGasTable(ncoll);
+	gas.WriteGasFile("ar_90_ch4_10.gas");
+	gas.LoadGasFile("ar_90_ch4_10.gas");
+	auto installdir = std::getenv("GARFIELD_INSTALL");
+	
+	//read the ion mobility table from file
+	if(!installdir)
+	{std::cerr << "GARFIELD_INSTALL variable not set.\n";
+	return 1;
+	}
+	const std::string path = installdir;
+	gas.LoadIonMobility(path + "/share/Garfield/Data/IonMobility_Ar+_Ar.txt");
+
+	//set the electricfield
+	ComponentAnalyticField cmp;
+	cmp.SetMedium(&gas);
+
+	//add cathod wires
+	constexpr double xc = 0.;
+	constexpr double yc = 0.;
+	
+	//make a sensor
+	Sensor sensor;
+	sensor.AddComponent(&cmp);
+
+    string sense_prefix = "sense";
+    for(int j = 0;j <= 6;j++)
+	{
+	//add Sense wires
+	cmp.AddWire(xc+1+j*gap_sense,yc+1,sense_dia,vs,"sense",70.,55.,19.35,1);
+    string sense_str = sense_prefix+std::to_string(j);
+    sensor.AddElectrode(&cmp,sense_str.c_str());
+    cmp.AddReadout(sense_str.c_str());
+	}
+
+    string gate_prefix = "gate";
+    for(int j = 0;j <= 5;j++)
+	{
+	//add gate wires
+	cmp.AddWire(xc+2+j*gap_sense,yc+1,gate_dia,vg,"gate",70.,100.,8.62,1);
+    string gate_str = gate_prefix+std::to_string(j);
+    sensor.AddElectrode(&cmp,gate_str.c_str());
+    cmp.AddReadout(gate_str.c_str());
+	}
+
+	//add the plane
+	cmp.AddPlaneY(0.,0.,"pad_window");
+	cmp.AddPlaneY(2.,0.,"pad_window");
+    sensor.AddElectrode(&cmp,"window1");
+    cmp.AddReadout("window1");
+    sensor.AddElectrode(&cmp,"window2");
+    cmp.AddReadout("window2");
+
+	//plot the cell
+	TCanvas *c1 = new TCanvas("c1","c1",800,600);
+	ViewCell cellView;
+	cellView.SetComponent(&cmp);
+	cellView.SetArea(0.,0.,14,2.);
+	cellView.SetCanvas(c1);
+	cellView.Plot2d();
+	c1 -> Update();
+
+	sensor.SetArea(0.,0.,0.,14.,2.,0.);
+
+	//plot iopotential contours
+	ViewField fieldView;
+	//TCanvas *c2 = new TCanvas("c2","c2",600,600);
+	fieldView.SetComponent(&cmp);
+	fieldView.SetArea(0.,0.,14,2.);
+	fieldView.SetVoltageRange(0.,1300.);
+	fieldView.SetCanvas(c1);
+    fieldView.SetNumberOfContours(30);
+	fieldView.PlotContour("v");
+	//fieldView.Plot("e","colz");
+	//c2 -> Update();
+
+	c1 -> Update();
+
+    vector<double> x0;
+    vector<double> y0;
+    vector<double> z0;
+
+    vector<double> x1;
+    vector<double> y1;
+    vector<double> z1;
+
+    fieldView.SetElectricFieldRange(-10000.,10000.);
+
+    fieldView.EqualFluxIntervals(0.,2.,0.,14.,2.,0.,x0,y0,z0,100);
+    fieldView.PlotFieldLines(x0,y0,z0,true,false);
+
+    fieldView.EqualFluxIntervals(0.,0.,0.,14.,0.,0.,x1,y1,z1,100);
+    fieldView.PlotFieldLines(x1,y1,z1,true,false);
+
+    c1->Update();
+
+	cellView.SetComponent(&cmp);
+	cellView.SetArea(0.,0.,14,2.);
+	cellView.SetCanvas(c1);
+	cellView.Plot2d();
+	c1 -> Update();
+
+	cmp.PrintCell();
+
+	app.Run(true);
+}

@@ -1,0 +1,1117 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 5.14.0-427.77.1.el9_4.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc 
+      Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/u/athirak2/.conda/envs/rootenv/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /u/athirak2/Gem/build/CMakeFiles/3.26.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/u/athirak2/.conda/envs/rootenv/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /u/athirak2/Gem/build/CMakeFiles/3.26.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5427f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5427f.dir/build.make CMakeFiles/cmTC_5427f.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch'
+        Building C object CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include    -v -o CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_5427f.dir/'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -isystem /u/athirak2/.conda/envs/rootenv/include /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5427f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o
+        GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44
+        GNU C17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /u/athirak2/.conda/envs/rootenv/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 345817baae17540a9049b51582f47d9b
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_5427f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5427f.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib -v CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -o cmTC_5427f 
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_5427f' '-dumpdir' 'cmTC_5427f.'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu4LRWS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5427f /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_5427f' '-dumpdir' 'cmTC_5427f.'
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/u/athirak2/.conda/envs/rootenv/include]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/include] ==> [/u/athirak2/.conda/envs/rootenv/include]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/u/athirak2/.conda/envs/rootenv/include;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5427f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5427f.dir/build.make CMakeFiles/cmTC_5427f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-PEf4ch']
+        ignore line: [Building C object CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include    -v -o CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_5427f.dir/']
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -isystem /u/athirak2/.conda/envs/rootenv/include /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5427f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [GNU C17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 345817baae17540a9049b51582f47d9b]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_5427f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5427f.dir/link.txt --verbose=1]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /u/athirak2/.conda/envs/rootenv/lib -Wl -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib -v CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -o cmTC_5427f ]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_5427f' '-dumpdir' 'cmTC_5427f.']
+        link line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu4LRWS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5427f /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccu4LRWS.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5427f] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [CMakeFiles/cmTC_5427f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> dir [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/u/athirak2/.conda/envs/rootenv/lib;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/u/athirak2/.conda/envs/rootenv/lib/gcc;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib;/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9eef4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9eef4.dir/build.make CMakeFiles/cmTC_9eef4.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM'
+        Building CXX object CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include    -v -o CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_9eef4.dir/'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /u/athirak2/.conda/envs/rootenv/include /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9eef4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o
+        GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44
+        GNU C++17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /u/athirak2/.conda/envs/rootenv/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 21212f3b596241103166ffd657dc2ce8
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9eef4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9eef4.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib -v CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9eef4 
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_9eef4' '-shared-libgcc' '-dumpdir' 'cmTC_9eef4.'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwqLIte.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9eef4 /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_9eef4' '-shared-libgcc' '-dumpdir' 'cmTC_9eef4.'
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/u/athirak2/.conda/envs/rootenv/include]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+          add: [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/include] ==> [/u/athirak2/.conda/envs/rootenv/include]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        collapse include dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/u/athirak2/.conda/envs/rootenv/include;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9eef4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9eef4.dir/build.make CMakeFiles/cmTC_9eef4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-14R7DM']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include    -v -o CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_9eef4.dir/']
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /u/athirak2/.conda/envs/rootenv/include /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9eef4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [GNU C++17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 21212f3b596241103166ffd657dc2ce8]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-v' '-o' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_9eef4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9eef4.dir/link.txt --verbose=1]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /u/athirak2/.conda/envs/rootenv/lib -Wl -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib -v CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9eef4 ]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-L/u/athirak2/.conda/envs/rootenv/lib' '-v' '-o' 'cmTC_9eef4' '-shared-libgcc' '-dumpdir' 'cmTC_9eef4.']
+        link line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwqLIte.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9eef4 /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccwqLIte.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9eef4] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [CMakeFiles/cmTC_9eef4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> dir [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+        collapse obj [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/u/athirak2/.conda/envs/rootenv/lib;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/u/athirak2/.conda/envs/rootenv/lib/gcc;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib;/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+      CMAKE_MODULE_PATH: "/u/athirak2/.conda/envs/rootenv/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a02a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a02a4.dir/build.make CMakeFiles/cmTC_a02a4.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M'
+        Building C object CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -o CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M/OpenMPTryFlag.c
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a02a4.dir/'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /u/athirak2/.conda/envs/rootenv/include /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_a02a4.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o
+        GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44
+        GNU C17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /u/athirak2/.conda/envs/rootenv/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 345817baae17540a9049b51582f47d9b
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_a02a4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a02a4.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -o cmTC_a02a4  -v 
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_a02a4' '-v' '-pthread' '-dumpdir' 'cmTC_a02a4.'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZPoMXH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a02a4 /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_a02a4' '-v' '-pthread' '-dumpdir' 'cmTC_a02a4.'
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a02a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a02a4.dir/build.make CMakeFiles/cmTC_a02a4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M']
+        ignore line: [Building C object CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -o CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M/OpenMPTryFlag.c]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a02a4.dir/']
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /u/athirak2/.conda/envs/rootenv/include /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-f0FX3M/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_a02a4.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o]
+        ignore line: [GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [GNU C17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 345817baae17540a9049b51582f47d9b]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_a02a4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a02a4.dir/link.txt --verbose=1]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /u/athirak2/.conda/envs/rootenv/lib -Wl -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -o cmTC_a02a4  -v ]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_a02a4' '-v' '-pthread' '-dumpdir' 'cmTC_a02a4.']
+        link line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZPoMXH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a02a4 /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZPoMXH.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a02a4] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [CMakeFiles/cmTC_a02a4.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> dir [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/u/athirak2/.conda/envs/rootenv/lib;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/u/athirak2/.conda/envs/rootenv/lib/gcc;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib;/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+      CMAKE_MODULE_PATH: "/u/athirak2/.conda/envs/rootenv/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71cee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71cee.dir/build.make CMakeFiles/cmTC_71cee.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S'
+        Building CXX object CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -o CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S/OpenMPTryFlag.cpp
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_71cee.dir/'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /u/athirak2/.conda/envs/rootenv/include /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_71cee.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o
+        GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44
+        GNU C++17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /u/athirak2/.conda/envs/rootenv/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 21212f3b596241103166ffd657dc2ce8
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_71cee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71cee.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -o cmTC_71cee  -v 
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-5) 
+        COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_71cee' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_71cee.'
+         /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD2YFCm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_71cee /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_71cee' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_71cee.'
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71cee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71cee.dir/build.make CMakeFiles/cmTC_71cee.dir/build]
+        ignore line: [gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S']
+        ignore line: [Building CXX object CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -o CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S/OpenMPTryFlag.cpp]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_71cee.dir/']
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /u/athirak2/.conda/envs/rootenv/include /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-zgRb0S/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_71cee.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /u/athirak2/.conda/envs/rootenv/include -o - |]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [GNU assembler version 2.44 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [GNU C++17 (conda-forge gcc 14.3.0-5) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/u/athirak2/.conda/envs/rootenv/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 21212f3b596241103166ffd657dc2ce8]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_71cee]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71cee.dir/link.txt --verbose=1]
+        ignore line: [/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /u/athirak2/.conda/envs/rootenv/lib -Wl -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -o cmTC_71cee  -v ]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1757034136611/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-pkgversion='conda-forge gcc 14.3.0-5' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-5) ]
+        ignore line: [COMPILER_PATH=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/u/athirak2/.conda/envs/rootenv/include' '-fopenmp' '-v' '-L/u/athirak2/.conda/envs/rootenv/lib' '-o' 'cmTC_71cee' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_71cee.']
+        link line: [ /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD2YFCm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_71cee /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /u/athirak2/.conda/envs/rootenv/lib -rpath-link /u/athirak2/.conda/envs/rootenv/lib -L /u/athirak2/.conda/envs/rootenv/lib/stubs -L /u/athirak2/.conda/envs/rootenv/lib]
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/u/athirak2/.conda/envs/rootenv/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccD2YFCm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_71cee] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [CMakeFiles/cmTC_71cee.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-rpath] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/u/athirak2/.conda/envs/rootenv/lib] ==> ignore
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> dir [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+          arg [-L/u/athirak2/.conda/envs/rootenv/lib] ==> dir [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc] ==> [/u/athirak2/.conda/envs/rootenv/lib/gcc]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib/stubs] ==> [/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        collapse library dir [/u/athirak2/.conda/envs/rootenv/lib] ==> [/u/athirak2/.conda/envs/rootenv/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/u/athirak2/.conda/envs/rootenv/lib;/u/athirak2/.conda/envs/rootenv/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/u/athirak2/.conda/envs/rootenv/lib/gcc;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/lib;/u/athirak2/.conda/envs/rootenv/x86_64-conda-linux-gnu/sysroot/usr/lib;/u/athirak2/.conda/envs/rootenv/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+      CMAKE_MODULE_PATH: "/u/athirak2/.conda/envs/rootenv/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0b89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d0b89.dir/build.make CMakeFiles/cmTC_d0b89.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4'
+        Building C object CMakeFiles/cmTC_d0b89.dir/OpenMPCheckVersion.c.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -o CMakeFiles/cmTC_d0b89.dir/OpenMPCheckVersion.c.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4/OpenMPCheckVersion.c
+        Linking C executable cmTC_d0b89
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0b89.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_d0b89.dir/OpenMPCheckVersion.c.o -o cmTC_d0b89 
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-B4Orp4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/u/athirak2/garfieldpp/install/lib64/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj"
+      binary: "/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib"
+      CMAKE_MODULE_PATH: "/u/athirak2/.conda/envs/rootenv/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06992/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_06992.dir/build.make CMakeFiles/cmTC_06992.dir/build
+        gmake[1]: Entering directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj'
+        Building CXX object CMakeFiles/cmTC_06992.dir/OpenMPCheckVersion.cpp.o
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -o CMakeFiles/cmTC_06992.dir/OpenMPCheckVersion.cpp.o -c /u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_06992
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06992.dir/link.txt --verbose=1
+        /u/athirak2/.conda/envs/rootenv/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /u/athirak2/.conda/envs/rootenv/include -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/u/athirak2/.conda/envs/rootenv/lib -Wl,-rpath-link,/u/athirak2/.conda/envs/rootenv/lib -L/u/athirak2/.conda/envs/rootenv/lib  CMakeFiles/cmTC_06992.dir/OpenMPCheckVersion.cpp.o -o cmTC_06992 
+        gmake[1]: Leaving directory '/u/athirak2/Gem/build/CMakeFiles/CMakeScratch/TryCompile-mkTJfj'
+        
+      exitCode: 0
+...

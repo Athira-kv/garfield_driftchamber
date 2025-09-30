@@ -1,0 +1,672 @@
+A conda environment has been detected CONDA_PREFIX= /sw/apps/miniconda3 
+miniconda3 is loaded. Consider running conda deactivate and reloading it.
+MediumMagboltz::SetComposition: Ar/CH4 (90/10)
+MediumMagboltz::GenerateGasTable: Found 69 excitations and 16 ionisations.
+    Ar EXC 1S5    J=2 METASTABLE         ELEVEL= 11.548 , energy = 11.5478 eV.
+    Ar EXC 1S4    J=1 RESONANT           ELEVEL= 11.624 , energy = 11.6238 eV.
+    Ar EXC 1S3    J=0 METASTABLE         ELEVEL= 11.723 , energy = 11.7228 eV.
+    Ar EXC 1S2    J=1 RESONANT           ELEVEL= 11.828 , energy = 11.8278 eV.
+    Ar EXC 2P10   J=1                    ELEVEL= 12.907 , energy = 12.9068 eV.
+    Ar EXC 2P9    J=3                    ELEVEL= 13.076 , energy = 13.0758 eV.
+    Ar EXC 2P8    J=2                    ELEVEL= 13.095 , energy = 13.0948 eV.
+    Ar EXC 2P7    J=1                    ELEVEL= 13.153 , energy = 13.1528 eV.
+    Ar EXC 2P6    J=2                    ELEVEL= 13.172 , energy = 13.1718 eV.
+    Ar EXC 2P5    J=0                    ELEVEL= 13.273 , energy = 13.2728 eV.
+    Ar EXC 2P4    J=1                    ELEVEL= 13.283 , energy = 13.2828 eV.
+    Ar EXC 2P3    J=2                    ELEVEL= 13.302 , energy = 13.3018 eV.
+    Ar EXC 2P2    J=1                    ELEVEL= 13.328 , energy = 13.3278 eV.
+    Ar EXC 2P1    J=0                    ELEVEL= 13.480 , energy = 13.4798 eV.
+    Ar EXC 3D6    J=0                    ELEVEL= 13.845 , energy = 13.8448 eV.
+    Ar EXC 3D5    J=1 RESONANT           ELEVEL= 13.864 , energy = 13.8638 eV.
+    Ar EXC 3D3    J=2                    ELEVEL= 13.903 , energy = 13.9028 eV.
+    Ar EXC 3D4!   J=4                    ELEVEL= 13.979 , energy = 13.9788 eV.
+    Ar EXC 3D4    J=3                    ELEVEL= 14.013 , energy = 14.0128 eV.
+    Ar EXC 3D1!!  J=2                    ELEVEL= 14.063 , energy = 14.0628 eV.
+    Ar EXC 2S5    J=2                    ELEVEL= 14.068 , energy = 14.0678 eV.
+    Ar EXC 2S4    J=1 RESONANT           ELEVEL= 14.090 , energy = 14.0898 eV.
+    Ar EXC 3D1!   J=3                    ELEVEL= 14.099 , energy = 14.0988 eV.
+    Ar EXC 3D2    J=1 RESONANT           ELEVEL= 14.153 , energy = 14.1528 eV.
+    Ar EXC 3S1!!!!J=2                    ELEVEL= 14.214 , energy = 14.2138 eV.
+    Ar EXC 3S1!!  J=2                    ELEVEL= 14.234 , energy = 14.2338 eV.
+    Ar EXC 3S1!!! J=3                    ELEVEL= 14.236 , energy = 14.2358 eV.
+    Ar EXC 2S3    J=0                    ELEVEL= 14.241 , energy = 14.2408 eV.
+    Ar EXC 2S2    J=1 RESONANT           ELEVEL= 14.255 , energy = 14.2548 eV.
+    Ar EXC 3S1!   J=1 RESONANT           ELEVEL= 14.304 , energy = 14.3038 eV.
+    Ar EXC 4D5    J=1 RESONANT           ELEVEL= 14.711 , energy = 14.7108 eV.
+    Ar EXC 3S4    J=1 RESONANT           ELEVEL= 14.848 , energy = 14.8478 eV.
+    Ar EXC 4D2    J=1 RESONANT           ELEVEL= 14.859 , energy = 14.8588 eV.
+    Ar EXC 4S1!   J=1 RESONANT           ELEVEL= 15.004 , energy = 15.0038 eV.
+    Ar EXC 3S2    J=1 RESONANT           ELEVEL= 15.022 , energy = 15.0218 eV.
+    Ar EXC 5D5    J=1 RESONANT           ELEVEL= 15.118 , energy = 15.1178 eV.
+    Ar EXC 4S4    J=1 RESONANT           ELEVEL= 15.186 , energy = 15.1858 eV.
+    Ar EXC 5D2    J=1 RESONANT           ELEVEL= 15.190 , energy = 15.1898 eV.
+    Ar EXC 6D5    J=1 RESONANT           ELEVEL= 15.308 , energy = 15.3078 eV.
+    Ar EXC 5S1!   J=1 RESONANT           ELEVEL= 15.351 , energy = 15.3508 eV.
+    Ar EXC 4S2    J=1 RESONANT           ELEVEL= 15.360 , energy = 15.3598 eV.
+    Ar EXC 5S4    J=1 RESONANT           ELEVEL= 15.366 , energy = 15.3658 eV.
+    Ar EXC 6D2    J=1 RESONANT           ELEVEL= 15.374 , energy = 15.3738 eV.
+    Ar EXC HIGH   J=1 RESONANT           ELEVEL= 15.660 , energy = 15.6598 eV.
+    CH4 EXCITATION TRIPLET  DISSOCIATION  ELOSS=  7.5    , energy = 7.49974 eV.
+    CH4 EXCITATION TRIPLET  DISSOCIATION  ELOSS=  8.5    , energy = 8.49971 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS=  8.75   , energy = 8.7497 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS=  9.25   , energy = 9.24968 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS=  9.75   , energy = 9.74967 eV.
+    CH4 EXCITATION TRIPLET  DISSOCIATION  ELOSS= 10.0    , energy = 9.99966 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 10.25   , energy = 10.2496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 10.75   , energy = 10.7496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 11.25   , energy = 11.2496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 11.75   , energy = 11.7496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 12.25   , energy = 12.2496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 12.75   , energy = 12.7496 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 13.25   , energy = 13.2495 eV.
+    CH4 EXCITATION A2D TO GROUND STATE.   ELOSS= 13.4    , energy = 13.3995 eV.
+    CH4 EXCITATION B2PI TO GROUND STATE   ELOSS= 13.7    , energy = 13.6995 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 13.75   , energy = 13.7495 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 14.25   , energy = 14.2495 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 14.75   , energy = 14.7495 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 15.25   , energy = 15.2495 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 15.75   , energy = 15.7495 eV.
+    CH4 EXC. OF POSITIVE ION LEVELS       ELOSS= 16.0    , energy = 15.9995 eV.
+    CH4 EXCITATION  H(ALPHA)              ELOSS= 16.14   , energy = 16.1394 eV.
+    CH4 EXCITATION  H(BETA)               ELOSS= 16.8    , energy = 16.7994 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 20.25   , energy = 20.4993 eV.
+    CH4 EXCITATION SINGLET  DISSOCIATION  ELOSS= 22.0    , energy = 21.9992 eV.
+    Ar IONISATION CHARGE STATE =1      ELOSS=   15.75961, energy = 15.7594 eV.
+    Ar IONISATION CHARGE STATE =2      ELOSS=   43.38928, energy = 43.3887 eV.
+    Ar IONISATION CHARGE STATE =3      ELOSS=   84.124  , energy = 84.1228 eV.
+    Ar IONISATION L3 SHELL             ELOSS=  248.4    , energy = 248.397 eV.
+    Ar IONISATION L2 SHELL             ELOSS=  250.6    , energy = 250.597 eV.
+    Ar IONISATION L1 SHELL             ELOSS=  326.3    , energy = 326.296 eV.
+    Ar IONISATION K  SHELL             ELOSS= 3205.9    , energy = 3205.86 eV.
+    CH4 IONISATION   CH4 +                ELOSS= 12.65   , energy = 12.6496 eV.
+    CH4 IONISATION   CH3 +                ELOSS= 14.25   , energy = 14.2495 eV.
+    CH4 IONISATION   CH2 +                ELOSS= 15.2    , energy = 15.1995 eV.
+    CH4 IONISATION   H   +                ELOSS= 22.2    , energy = 22.1992 eV.
+    CH4 IONISATION   CH  +                ELOSS= 23.5    , energy = 23.4992 eV.
+    CH4 IONISATION   C   +                ELOSS= 25.2    , energy = 25.1991 eV.
+    CH4 IONISATION     2(+)               ELOSS= 27.0    , energy = 26.9991 eV.
+    CH4 IONISATION   H2  +                ELOSS= 27.9    , energy = 27.899 eV.
+    CH4 IONISATION CARBON K-SHELL         ELOSS=285.0    , energy = 284.99 eV.
+MediumMagboltz::GenerateGasTable: E = 10 V/cm, B = 0 T, angle: 1.5708 rad
+ RM48 INITIALIZED:  54217137           0         0
+
+
+          PROGRAM MAGBOLTZ 2 VERSION 11.19
+
+          MONTE CARLO SOLUTION FOR MIXTURE OF  2 GASES.
+     ------------------------------------------------------
+
+       GASES  USED                 PERCENTAGE USED 
+
+      ARGON ANISOTROPIC    2014       90.0000
+       CH4 2015  ANISOTROPIC          10.0000
+
+
+  GAS TEMPERATURE =  20.0 DEGREES CENTIGRADE.
+  GAS PRESSURE =   760.0 TORR.
+
+  INTEGRATION FROM 0.0 TO     0.50 EV.  IN 4000 STEPS. 
+
+ PENNING EFFECTS NOT INCLUDED
+
+ ANISOTROPIC SCATTERING TYPE 2 (OKHRIMOVSKYY) USED IF AVAILABLE
+
+ SHORT DECORRELATION LENGTH = 400000 COLLISIONS.
+
+
+ THERMAL MOTION OF GAS NOT INCLUDED
+
+  ELECTRIC FIELD =     10.0000 VOLTS/CM.
+  MAGNETIC FIELD =     0.0000 KILOGAUSS.
+  ANGLE BETWEEN ELECTRIC AND MAGNETIC FIELD =    90.000 DEGREES.
+  CYCLOTRON FREQ. =   0.000D+00 RADIANS/PICOSECOND
+
+  INITIAL ELECTRON ENERGY =   0.010 EV.
+
+  TOTAL NUMBER OF REAL COLLISIONS =  400000000
+
+  NULL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.968D-01      0.961D-01      0.682D-01      0.471D-01
+      0.377D-01      0.410D-01      0.502D-01      0.559D-01
+
+  REAL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.966D-01      0.693D-01      0.455D-01      0.362D-01
+      0.329D-01      0.346D-01      0.411D-01      0.503D-01
+
+
+    VEL      POS        TIME      ENERGY   COUNT   DIFXX     DIFYY     DIFZZ
+
+     4.95  0.239D+01  0.482D+09   0.0527   100     1690.6    1648.0       0.0
+     4.93  0.475D+01  0.964D+09   0.0525   200     1707.2    1749.1       0.0
+     4.95  0.716D+01  0.145D+10   0.0526   300     1749.9    1740.2    3166.4
+     4.95  0.954D+01  0.193D+10   0.0526   400     1724.9    1733.7    3150.1
+     4.95  0.119D+02  0.241D+10   0.0526   500     1647.7    1722.8    3085.6
+     4.96  0.143D+02  0.289D+10   0.0526   600     1704.2    1673.0    2965.4
+     4.95  0.167D+02  0.337D+10   0.0526   700     1715.9    1694.8    2978.2
+     4.95  0.191D+02  0.386D+10   0.0526   800     1682.6    1672.1    2962.1
+     4.95  0.215D+02  0.434D+10   0.0526   900     1692.4    1670.7    2915.3
+     4.95  0.239D+02  0.482D+10   0.0526  1000     1698.6    1677.5    2893.8
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+  CALCULATED MAX. COLLISION TIME = 390.91 PICOSECONDS.
+
+  NUMBER OF NULL COLLISIONS =   57636752
+  NUMBER OF REAL COLLISIONS =  400000000
+
+  Z DRIFT VELOCITY = 0.4953E+01 MICRONS/NANOSECOND  +-    0.19% 
+  Y DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+  X DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+
+
+           DIFFUSION IN CM**2/SEC.
+
+
+  TRANSVERSE DIFFUSION   = 0.1688D+04 +-    2.95%
+          =   0.0341 EV. +-    2.95%
+          =  825.625 MICRONS/CENTIMETER**0.5  +-    1.48%
+
+
+  LONGITUDINAL DIFFUSION = 0.2894D+04 +-     2.6%
+          =   0.0584 EV. +-    2.65%
+          = 1080.996 MICRONS/CENTIMETER**0.5  +-    1.33%
+
+
+
+  IONISATION RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+  ATTACHMENT RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+
+
+
+  MEAN ELECTRON ENERGY =   0.0526 EV. ERROR =  +-    0.09%
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+
+ NUMBER OF COLLISIONS IN FINAL ENERGY BIN =    38.0
+
+      TOTAL COLL. FREQ. = 0.8297D-01 (*10**12)/SEC.
+    ELASTIC COLL. FREQ. = 0.8293D-01 (*10**12)/SEC.
+  INELASTIC COLL. FREQ. = 0.4836D-04 (*10**12)/SEC.
+ IONISATION COLL. FREQ. = 0.0000D+00 (*10**12)/SEC.
+ ATTACHMENT COLL. FREQ. = 0.0000D+00 (*10**12/SEC.
+
+-----------------------------------------------------------------------------
+
+  DETAILED COLLISION FREQUENCIES FOR EACH GAS IN UNITS OF 10**12/SEC. :
+
+
+   ARGON ANISOTROPIC    2014
+-----------------------------
+
+
+    ELASTIC ANISOTROPIC       ARGON                      0.6000D-01 +-  0.0059 %
+    ATTACHMENT                                           0.0000D+00 +-  0.0000 %
+    CH4 2015  ANISOTROPIC   
+MediumMagboltz::RunMagboltz: TOF Rates not available.
+MediumMagboltz::RunMagboltz: Results:
+    Drift velocity along E:     0.00049528 cm/ns +/-  0.19%
+    Drift velocity along Bt:    0.00000000 cm/ns +/-  0.00%
+    Drift velocity along ExB:   0.00000000 cm/ns +/-  0.00%
+    Flux Drift velocity:     0.00049528 cm/ns +/-  0.19%
+    Bulk Drift velocity:     0.00049528 cm/ns +/-  0.19%
+    Lorentz angle:                   0.000 degree
+    Longitudinal diffusion:     0.10809960 cm1/2 +/-  1.33%
+    Transverse diffusion:       0.08256247 cm1/2 +/-  1.48%
+    Townsend coefficient:           0.0000 cm-1  +/-  0.00%
+    Attachment coefficient:         0.0000 cm-1  +/-  0.00%
+    Ionization rate:         0.0000 ns-1 +/-  0.00%
+    Attachment rate:         0.0000 ns-1 +/-  0.00%
+MediumMagboltz::GenerateGasTable: E = 13.8692 V/cm, B = 0 T, angle: 1.5708 rad
+-----------------------------
+
+
+    ELASTIC   ANISOTROPIC      METHANE                   0.2293D-01 +-  0.0095 %
+    ATTACHMENT            CH2-                           0.0000D+00 +-  0.0000 %
+    ATTACHMENT DEATTACHMENT  H- SCALED BY 0.02           0.0000D+00 +-  0.0000 %
+    VIBRATION V4 SUPERELASTIC         ELOSS=-0.162513    0.8849D-05 +-  0.4842 %
+    VIBRATION V4                      ELOSS= 0.162513    0.3621D-04 +-  0.2394 %
+    VIBRATION V2 SUPERELASTIC         ELOSS=-0.190109    0.5999D-06 +-  1.8595 %
+    VIBRATION V2                      ELOSS= 0.190109    0.2692D-05 +-  0.8778 %
+    VIBRATION V1                      ELOSS= 0.361597    0.1659D-08 +- 35.3553 %
+    VIBRATION V3                      ELOSS= 0.374369    0.8505D-08 +- 15.6174 %
+-----------------------------------------------------------------------------
+
+
+           NORMALISED ENERGY DISTRIBUTION
+      E=      0.006      SPEC= 0.1122D+00
+      E=      0.019      SPEC= 0.1913D+00
+      E=      0.031      SPEC= 0.1799D+00
+      E=      0.044      SPEC= 0.1451D+00
+      E=      0.056      SPEC= 0.1100D+00
+      E=      0.069      SPEC= 0.8047D-01
+      E=      0.081      SPEC= 0.5715D-01
+      E=      0.094      SPEC= 0.3999D-01
+      E=      0.106      SPEC= 0.2775D-01
+      E=      0.119      SPEC= 0.1909D-01
+      E=      0.131      SPEC= 0.1303D-01
+      E=      0.144      SPEC= 0.8761D-02
+      E=      0.156      SPEC= 0.5726D-02
+      E=      0.169      SPEC= 0.3600D-02
+      E=      0.181      SPEC= 0.2166D-02
+      E=      0.194      SPEC= 0.1324D-02
+      E=      0.206      SPEC= 0.8255D-03
+      E=      0.219      SPEC= 0.5260D-03
+      E=      0.231      SPEC= 0.3411D-03
+      E=      0.244      SPEC= 0.2226D-03
+      E=      0.256      SPEC= 0.1497D-03
+      E=      0.269      SPEC= 0.9984D-04
+      E=      0.281      SPEC= 0.6700D-04
+      E=      0.294      SPEC= 0.4572D-04
+      E=      0.306      SPEC= 0.3122D-04
+      E=      0.319      SPEC= 0.2080D-04
+      E=      0.331      SPEC= 0.1404D-04
+      E=      0.344      SPEC= 0.9917D-05
+      E=      0.356      SPEC= 0.6593D-05
+      E=      0.369      SPEC= 0.4047D-05
+      E=      0.381      SPEC= 0.2323D-05
+      E=      0.394      SPEC= 0.1475D-05
+      E=      0.406      SPEC= 0.8100D-06
+      E=      0.419      SPEC= 0.5075D-06
+      E=      0.431      SPEC= 0.4725D-06
+      E=      0.444      SPEC= 0.3675D-06
+      E=      0.456      SPEC= 0.1375D-06
+      E=      0.469      SPEC= 0.1000D-06
+      E=      0.481      SPEC= 0.7250D-07
+      E=      0.494      SPEC= 0.1500D-06
+
+
+          PROGRAM MAGBOLTZ 2 VERSION 11.19
+
+          MONTE CARLO SOLUTION FOR MIXTURE OF  2 GASES.
+     ------------------------------------------------------
+
+       GASES  USED                 PERCENTAGE USED 
+
+      ARGON ANISOTROPIC    2014       90.0000
+       CH4 2015  ANISOTROPIC          10.0000
+
+
+  GAS TEMPERATURE =  20.0 DEGREES CENTIGRADE.
+  GAS PRESSURE =   760.0 TORR.
+
+  INTEGRATION FROM 0.0 TO     0.71 EV.  IN 4000 STEPS. 
+
+ PENNING EFFECTS NOT INCLUDED
+
+ ANISOTROPIC SCATTERING TYPE 2 (OKHRIMOVSKYY) USED IF AVAILABLE
+
+ SHORT DECORRELATION LENGTH = 400000 COLLISIONS.
+
+
+ THERMAL MOTION OF GAS NOT INCLUDED
+
+  ELECTRIC FIELD =     13.8692 VOLTS/CM.
+  MAGNETIC FIELD =     0.0000 KILOGAUSS.
+  ANGLE BETWEEN ELECTRIC AND MAGNETIC FIELD =    90.000 DEGREES.
+  CYCLOTRON FREQ. =   0.000D+00 RADIANS/PICOSECOND
+
+  INITIAL ELECTRON ENERGY =   0.014 EV.
+
+  TOTAL NUMBER OF REAL COLLISIONS =  400000000
+
+  NULL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.968D-01      0.941D-01      0.567D-01      0.429D-01
+      0.545D-01      0.736D-01      0.970D-01      0.108D+00
+
+  REAL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.930D-01      0.530D-01      0.360D-01      0.332D-01
+      0.400D-01      0.533D-01      0.720D-01      0.951D-01
+
+
+    VEL      POS        TIME      ENERGY   COUNT   DIFXX     DIFYY     DIFZZ
+
+     7.48  0.367D+01  0.490D+09   0.0579   100     2065.5    2043.7       0.0
+     7.53  0.739D+01  0.980D+09   0.0580   200     1929.1    2036.5       0.0
+     7.55  0.111D+02  0.147D+10   0.0580   300     1998.7    1973.7    3142.5
+     7.55  0.148D+02  0.196D+10   0.0580   400     1990.4    1938.5    3385.2
+     7.54  0.185D+02  0.245D+10   0.0579   500     1920.4    1913.1    3545.9
+     7.55  0.222D+02  0.294D+10   0.0579   600     1912.7    1929.1    3487.7
+     7.56  0.259D+02  0.343D+10   0.0579   700     1913.6    1912.9    3565.0
+     7.55  0.296D+02  0.392D+10   0.0579   800     1914.5    1931.4    3590.0
+     7.54  0.333D+02  0.441D+10   0.0579   900     1916.2    1916.6    3612.4
+     7.54  0.370D+02  0.490D+10   0.0579  1000     1979.8    1919.8    3561.4
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+  CALCULATED MAX. COLLISION TIME = 473.22 PICOSECONDS.
+
+  NUMBER OF NULL COLLISIONS =   68436154
+  NUMBER OF REAL COLLISIONS =  400000000
+
+  Z DRIFT VELOCITY = 0.7540E+01 MICRONS/NANOSECOND  +-    0.18% 
+  Y DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+  X DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+
+
+           DIFFUSION IN CM**2/SEC.
+
+
+  TRANSVERSE DIFFUSION   = 0.1950D+04 +-    2.83%
+          =   0.0359 EV. +-    2.83%
+          =  719.138 MICRONS/CENTIMETER**0.5  +-    1.42%
+
+
+  LONGITUDINAL DIFFUSION = 0.3561D+04 +-     3.0%
+          =   0.0655 EV. +-    2.96%
+          =  971.917 MICRONS/CENTIMETER**0.5  +-    1.48%
+
+
+
+  IONISATION RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+  ATTACHMENT RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+
+
+
+  MEAN ELECTRON ENERGY =   0.0579 EV. ERROR =  +-    0.06%
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+
+ NUMBER OF COLLISIONS IN FINAL ENERGY BIN =     0.0
+
+      TOTAL COLL. FREQ. = 0.8160D-01 (*10**12)/SEC.
+    ELASTIC COLL. FREQ. = 0.8152D-01 (*10**12)/SEC.
+  INELASTIC COLL. FREQ. = 0.8155D-04 (*10**12)/SEC.
+ IONISATION COLL. FREQ. = 0.0000D+00 (*10**12)/SEC.
+ ATTACHMENT COLL. FREQ. = 0.0000D+00 (*10**12/SEC.
+
+-----------------------------------------------------------------------------
+
+  DETAILED COLLISION FREQUENCIES FOR EACH GAS IN UNITS OF 10**12/SEC. :
+
+
+   ARGON ANISOTROPIC    2014
+-----------------------------
+
+
+    ELASTIC ANISOTROPIC       ARGON                      0.5906D-01 +-  0.0059 %
+    ATTACHMENT                                           0.0000D+00 +-  0.0000 %
+    CH4 2015  ANISOTROPIC   
+-----------------------------
+
+
+    ELASTIC   ANISOTROPIC      METHANE                   0.2246D-01 +-  0.0095 %
+    ATTACHMENT            CH2-                           0.0000D+00 +-  0.0000 %
+    ATTACHMENT DEATTACHMENT  H- SCALED BY 0.02           0.0000D+00 +-  0.0000 %
+    VIBRATION V4 SUPERELASTIC         ELOSS=-0.162513    0.8835D-05 +-  0.4805 %
+    VIBRATION V4                      ELOSS= 0.162513    0.6624D-04 +-  0.1755 %
+    VIBRATION V2 SUPERELASTIC         ELOSS=-0.190109    0.5834D-06 +-  1.8699 %
+    VIBRATION V2                      ELOSS= 0.190109    0.5834D-05 +-  0.5914 %
+    VIBRATION V1                      ELOSS= 0.361597    0.9588D-08 +- 14.5865 %
+    VIBRATION V3                      ELOSS= 0.374369    0.4998D-07 +-  6.3888 %
+    VIBRATION  HARMONICS NV1+NV3      ELOSS=  0.544      0.0000D+00 +-  0.0000 %
+-----------------------------------------------------------------------------
+
+
+           NORMALISED ENERGY DISTRIBUTION
+      E=      0.009      SPEC= 0.1697D+00
+      E=      0.027      SPEC= 0.2505D+00
+      E=      0.044      SPEC= 0.2022D+00
+      E=      0.062      SPEC= 0.1412D+00
+      E=      0.080      SPEC= 0.9205D-01
+      E=      0.097      SPEC= 0.5748D-01
+      E=      0.115      SPEC= 0.3521D-01
+      E=      0.133      SPEC= 0.2133D-01
+      E=      0.150      SPEC= 0.1277D-01
+      E=      0.168      SPEC= 0.7392D-02
+      E=      0.186      SPEC= 0.4135D-02
+      E=      0.203      SPEC= 0.2350D-02
+      E=      0.221      SPEC= 0.1391D-02
+      E=      0.239      SPEC= 0.8461D-03
+      E=      0.256      SPEC= 0.5291D-03
+      E=      0.274      SPEC= 0.3324D-03
+MediumMagboltz::RunMagboltz: TOF Rates not available.
+MediumMagboltz::RunMagboltz: Results:
+    Drift velocity along E:     0.00075403 cm/ns +/-  0.18%
+    Drift velocity along Bt:    0.00000000 cm/ns +/-  0.00%
+    Drift velocity along ExB:   0.00000000 cm/ns +/-  0.00%
+    Flux Drift velocity:     0.00075403 cm/ns +/-  0.18%
+    Bulk Drift velocity:     0.00075403 cm/ns +/-  0.18%
+    Lorentz angle:                   0.000 degree
+    Longitudinal diffusion:     0.09719168 cm1/2 +/-  1.48%
+    Transverse diffusion:       0.07191379 cm1/2 +/-  1.42%
+    Townsend coefficient:           0.0000 cm-1  +/-  0.00%
+    Attachment coefficient:         0.0000 cm-1  +/-  0.00%
+    Ionization rate:         0.0000 ns-1 +/-  0.00%
+    Attachment rate:         0.0000 ns-1 +/-  0.00%
+MediumMagboltz::GenerateGasTable: E = 19.2354 V/cm, B = 0 T, angle: 1.5708 rad
+      E=      0.292      SPEC= 0.2077D-03
+      E=      0.309      SPEC= 0.1294D-03
+      E=      0.327      SPEC= 0.7895D-04
+      E=      0.345      SPEC= 0.4772D-04
+      E=      0.362      SPEC= 0.2777D-04
+      E=      0.380      SPEC= 0.1600D-04
+      E=      0.398      SPEC= 0.8610D-05
+      E=      0.415      SPEC= 0.4655D-05
+      E=      0.433      SPEC= 0.2445D-05
+      E=      0.451      SPEC= 0.1230D-05
+      E=      0.468      SPEC= 0.6725D-06
+      E=      0.486      SPEC= 0.3525D-06
+      E=      0.504      SPEC= 0.1675D-06
+      E=      0.521      SPEC= 0.7500D-07
+      E=      0.539      SPEC= 0.2750D-07
+      E=      0.557      SPEC= 0.2500D-07
+      E=      0.575      SPEC= 0.3000D-07
+      E=      0.592      SPEC= 0.4250D-07
+      E=      0.610      SPEC= 0.6500D-07
+      E=      0.628      SPEC= 0.3250D-07
+      E=      0.645      SPEC= 0.5000D-08
+      E=      0.663      SPEC= 0.0000D+00
+      E=      0.681      SPEC= 0.0000D+00
+      E=      0.698      SPEC= 0.0000D+00
+
+
+          PROGRAM MAGBOLTZ 2 VERSION 11.19
+
+          MONTE CARLO SOLUTION FOR MIXTURE OF  2 GASES.
+     ------------------------------------------------------
+
+       GASES  USED                 PERCENTAGE USED 
+
+      ARGON ANISOTROPIC    2014       90.0000
+       CH4 2015  ANISOTROPIC          10.0000
+
+
+  GAS TEMPERATURE =  20.0 DEGREES CENTIGRADE.
+  GAS PRESSURE =   760.0 TORR.
+
+  INTEGRATION FROM 0.0 TO     0.71 EV.  IN 4000 STEPS. 
+
+ PENNING EFFECTS NOT INCLUDED
+
+ ANISOTROPIC SCATTERING TYPE 2 (OKHRIMOVSKYY) USED IF AVAILABLE
+
+ SHORT DECORRELATION LENGTH = 400000 COLLISIONS.
+
+
+ THERMAL MOTION OF GAS NOT INCLUDED
+
+  ELECTRIC FIELD =     19.2354 VOLTS/CM.
+  MAGNETIC FIELD =     0.0000 KILOGAUSS.
+  ANGLE BETWEEN ELECTRIC AND MAGNETIC FIELD =    90.000 DEGREES.
+  CYCLOTRON FREQ. =   0.000D+00 RADIANS/PICOSECOND
+
+  INITIAL ELECTRON ENERGY =   0.014 EV.
+
+  TOTAL NUMBER OF REAL COLLISIONS =  400000000
+
+  NULL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.968D-01      0.968D-01      0.609D-01      0.530D-01
+      0.614D-01      0.786D-01      0.103D+00      0.108D+00
+
+  REAL COLLISION FREQUENCY AT  8 EQUALLY SPACED ENERGY INTERVALS (*10**12/SEC)
+      0.930D-01      0.530D-01      0.360D-01      0.332D-01
+      0.400D-01      0.533D-01      0.720D-01      0.951D-01
+
+
+    VEL      POS        TIME      ENERGY   COUNT   DIFXX     DIFYY     DIFZZ
+
+    11.79  0.594D+01  0.504D+09   0.0659   100     2562.0    2960.5       0.0
+    11.71  0.118D+02  0.101D+10   0.0657   200     2626.9    2569.4       0.0
+    11.71  0.177D+02  0.151D+10   0.0657   300     2582.6    2719.6    5097.7
+    11.70  0.236D+02  0.201D+10   0.0657   400     2454.5    2653.5    5184.0
+    11.68  0.294D+02  0.252D+10   0.0657   500     2435.2    2604.7    5174.6
+    11.69  0.353D+02  0.302D+10   0.0657   600     2457.0    2579.8    4931.8
+    11.68  0.412D+02  0.352D+10   0.0657   700     2405.1    2555.3    4859.9
+    11.67  0.470D+02  0.403D+10   0.0657   800     2405.2    2551.6    4824.2
+    11.67  0.528D+02  0.453D+10   0.0657   900     2490.5    2553.4    4778.3
+    11.66  0.587D+02  0.503D+10   0.0657  1000     2468.6    2554.6    4997.9
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+  CALCULATED MAX. COLLISION TIME = 462.86 PICOSECONDS.
+
+  NUMBER OF NULL COLLISIONS =   81292256
+  NUMBER OF REAL COLLISIONS =  400000000
+
+  Z DRIFT VELOCITY = 0.1166E+02 MICRONS/NANOSECOND  +-    0.16% 
+  Y DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+  X DRIFT VELOCITY = 0.0000E+00 MICRONS/NANOSECOND  +-    0.00%
+
+
+           DIFFUSION IN CM**2/SEC.
+
+
+  TRANSVERSE DIFFUSION   = 0.2512D+04 +-    3.62%
+          =   0.0414 EV. +-    3.62%
+          =  656.251 MICRONS/CENTIMETER**0.5  +-    1.81%
+
+
+  LONGITUDINAL DIFFUSION = 0.4998D+04 +-     5.1%
+          =   0.0824 EV. +-    5.12%
+          =  925.745 MICRONS/CENTIMETER**0.5  +-    2.56%
+
+
+
+  IONISATION RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+  ATTACHMENT RATE /CM.= 0.0000D+00 +/-  0.00 PERCENT.
+MediumMagboltz::RunMagboltz: TOF Rates not available.
+MediumMagboltz::RunMagboltz: Results:
+    Drift velocity along E:     0.00116637 cm/ns +/-  0.16%
+    Drift velocity along Bt:    0.00000000 cm/ns +/-  0.00%
+    Drift velocity along ExB:   0.00000000 cm/ns +/-  0.00%
+    Flux Drift velocity:     0.00116637 cm/ns +/-  0.16%
+    Bulk Drift velocity:     0.00116637 cm/ns +/-  0.16%
+    Lorentz angle:                   0.000 degree
+    Longitudinal diffusion:     0.09257450 cm1/2 +/-  2.56%
+    Transverse diffusion:       0.06562505 cm1/2 +/-  1.81%
+    Townsend coefficient:           0.0000 cm-1  +/-  0.00%
+    Attachment coefficient:         0.0000 cm-1  +/-  0.00%
+    Ionization rate:         0.0000 ns-1 +/-  0.00%
+    Attachment rate:         0.0000 ns-1 +/-  0.00%
+MediumMagboltz::GenerateGasTable: E = 26.678 V/cm, B = 0 T, angle: 1.5708 rad
+
+
+
+  MEAN ELECTRON ENERGY =   0.0657 EV. ERROR =  +-    0.06%
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+
+ NUMBER OF COLLISIONS IN FINAL ENERGY BIN =     0.0
+
+      TOTAL COLL. FREQ. = 0.7948D-01 (*10**12)/SEC.
+    ELASTIC COLL. FREQ. = 0.7932D-01 (*10**12)/SEC.
+  INELASTIC COLL. FREQ. = 0.1534D-03 (*10**12)/SEC.
+ IONISATION COLL. FREQ. = 0.0000D+00 (*10**12)/SEC.
+ ATTACHMENT COLL. FREQ. = 0.0000D+00 (*10**12/SEC.
+
+-----------------------------------------------------------------------------
+
+  DETAILED COLLISION FREQUENCIES FOR EACH GAS IN UNITS OF 10**12/SEC. :
+
+
+   ARGON ANISOTROPIC    2014
+-----------------------------
+
+
+    ELASTIC ANISOTROPIC       ARGON                      0.5758D-01 +-  0.0059 %
+    ATTACHMENT                                           0.0000D+00 +-  0.0000 %
+    CH4 2015  ANISOTROPIC   
+-----------------------------
+
+
+    ELASTIC   ANISOTROPIC      METHANE                   0.2174D-01 +-  0.0096 %
+    ATTACHMENT            CH2-                           0.0000D+00 +-  0.0000 %
+    ATTACHMENT DEATTACHMENT  H- SCALED BY 0.02           0.0000D+00 +-  0.0000 %
+    VIBRATION V4 SUPERELASTIC         ELOSS=-0.162513    0.8874D-05 +-  0.4732 %
+    VIBRATION V4                      ELOSS= 0.162513    0.1298D-03 +-  0.1237 %
+    VIBRATION V2 SUPERELASTIC         ELOSS=-0.190109    0.5959D-06 +-  1.8260 %
+    VIBRATION V2                      ELOSS= 0.190109    0.1367D-04 +-  0.3812 %
+    VIBRATION V1                      ELOSS= 0.361597    0.6597D-07 +-  5.4882 %
+    VIBRATION V3                      ELOSS= 0.374369    0.4411D-06 +-  2.1224 %
+    VIBRATION  HARMONICS NV1+NV3      ELOSS=  0.544      0.0000D+00 +-  0.0000 %
+-----------------------------------------------------------------------------
+
+
+           NORMALISED ENERGY DISTRIBUTION
+      E=      0.009      SPEC= 0.1515D+00
+      E=      0.027      SPEC= 0.2326D+00
+      E=      0.044      SPEC= 0.1971D+00
+      E=      0.062      SPEC= 0.1441D+00
+      E=      0.080      SPEC= 0.9767D-01
+      E=      0.097      SPEC= 0.6354D-01
+      E=      0.115      SPEC= 0.4070D-01
+      E=      0.133      SPEC= 0.2593D-01
+      E=      0.150      SPEC= 0.1650D-01
+      E=      0.168      SPEC= 0.1048D-01
+      E=      0.186      SPEC= 0.6587D-02
+      E=      0.203      SPEC= 0.4218D-02
+      E=      0.221      SPEC= 0.2792D-02
+      E=      0.239      SPEC= 0.1903D-02
+      E=      0.256      SPEC= 0.1327D-02
+      E=      0.274      SPEC= 0.9357D-03
+      E=      0.292      SPEC= 0.6659D-03
+      E=      0.309      SPEC= 0.4677D-03
+      E=      0.327      SPEC= 0.3307D-03
+      E=      0.345      SPEC= 0.2285D-03
+      E=      0.362      SPEC= 0.1535D-03
+      E=      0.380      SPEC= 0.1002D-03
+      E=      0.398      SPEC= 0.6382D-04
+      E=      0.415      SPEC= 0.3861D-04
+      E=      0.433      SPEC= 0.2329D-04
+      E=      0.451      SPEC= 0.1357D-04
+      E=      0.468      SPEC= 0.7943D-05
+      E=      0.486      SPEC= 0.4352D-05
+      E=      0.504      SPEC= 0.2350D-05
+      E=      0.521      SPEC= 0.1505D-05
+      E=      0.539      SPEC= 0.7725D-06
+      E=      0.557      SPEC= 0.2950D-06
+      E=      0.575      SPEC= 0.1625D-06
+      E=      0.592      SPEC= 0.7000D-07
+      E=      0.610      SPEC= 0.2500D-07
+      E=      0.628      SPEC= 0.2250D-07
+      E=      0.645      SPEC= 0.1750D-07
+      E=      0.663      SPEC= 0.0000D+00
+      E=      0.681      SPEC= 0.0000D+00
+      E=      0.698      SPEC= 0.0000D+00
+
+
+          PROGRAM MAGBOLTZ 2 VERSION 11.19
+
+          MONTE CARLO SOLUTION FOR MIXTURE OF  2 GASES.
+     ------------------------------------------------------
+
+       GASES  USED                 PERCENTAGE USED 
+
+      ARGON ANISOTROPIC    2014       90.0000
+       CH4 2015  ANISOTROPIC          10.0000
+
+
+  GAS TEMPERATURE =  20.0 DEGREES CENTIGRADE.
+  GAS PRESSURE =   760.0 TORR.
+
+  INTEGRATION FROM 0.0 TO     1.00 EV.  IN 4000 STEPS. 
+
+ PENNING EFFECTS NOT INCLUDED
+
+ ANISOTROPIC SCATTERING TYPE 2 (OKHRIMOVSKYY) USED IF AVAILABLE

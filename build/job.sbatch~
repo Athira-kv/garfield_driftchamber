@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --time=02:00:10          # total expected computing time
+#SBATCH --ntasks=1
+#SBATCH --nodes=1                # number of nodes
+#SBATCH --cpus-per-task=16       # number of CPUs to allocate for each task
+#SBATCH --ntasks-per-node=1      # number of tasks per node
+#SBATCH --mem-per-cpu=16G        # memory per CPU
+#SBATCH --output=LOG.log         # output file (recommended for debugging)
+#SBATCH --job-name=myjobname     # specify a custom job name
+#SBATCH --partition=stat         # queue/partition
+#SBATCH --mail-type=ALL          # notifications: NONE, BEGIN, END, FAIL, ALL
+#SBATCH --mail-user=myemail      # email address to notify
+
+# -------- Load environment --------
+module load miniconda3
+conda activate rootenv
+
+# -------- Run your executable --------
+./Gem
