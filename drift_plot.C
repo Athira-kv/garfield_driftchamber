@@ -1,0 +1,67 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+#include "Garfield/MediumMagboltz.hh"
+#include "TGraph.h"
+#include "TCanvas.h"
+
+void drift_plot() {
+  using namespace Garfield;
+
+  // Load your precomputed Magboltz gas table
+  MediumMagboltz* gas = new MediumMagboltz();
+  if (!gas->LoadGasFile("ar_90_ch4_10.gas")) {
+    std::cerr << "Error: could not load gas table." << std::endl;
+  }
+
+  std::vector<double> fields;
+  std::vector<double> vdrift;
+  std::vector<double> diffL;
+  std::vector<double> diffT;
+
+  double bx = 0., by = 0., bz = 0.;  // No magnetic field
+
+  for (double e = 100.; e <= 2000.; e += 50.) {
+    double vx, vy, vz;
+    if (!gas->ElectronVelocity(e, 0., 0., bx, by, bz, vx, vy, vz)) continue;
+
+    double v = sqrt(vx * vx + vy * vy + vz * vz);
+
+    double dl, dt;
+    if (!gas->ElectronDiffusion(e, 0., 0., bx, by, bz, dl, dt)) continue;
+
+    fields.push_back(e);
+    vdrift.push_back(v);
+    diffL.push_back(dl);
+    diffT.push_back(dt);
+
+    /* std::cout << "E = " << e << " V/cm  "
+              << " vdrift = " << v << " cm/us"
+              << "  DL = " << dl << " cm^0.5"
+              << "  DT = " << dt << " cm^0.5" << std::endl;*/
+  }
+
+  
+  TCanvas* c1 = new TCanvas("c1", "Transport parameters", 800, 600);
+  c1->Divide(1, 2);
+
+  c1->cd(1);
+  TGraph* gV = new TGraph(fields.size(), fields.data(), vdrift.data());
+  gV->SetTitle("Drift velocity;E [V/cm];v_{d} [cm/#mus]");
+  gV->SetLineColor(kBlue);
+  gV->Draw("AL");
+
+  c1->cd(2);
+  TGraph* gDL = new TGraph(fields.size(), fields.data(), diffL.data());
+  gDL->SetTitle("Long. Diffusion coefficient;E [V/cm];Diffusion [cm^{1/2}]");
+  gDL->SetLineColor(kRed);
+  gDL->Draw("AL");
+
+  TGraph* gDT = new TGraph(fields.size(), fields.data(), diffT.data());
+  gDT->SetTitle("Transverse Diffusion coeff; E [V/cm]; Diffusion [cm^{1/2}]");
+  gDT->SetLineColor(kGreen + 2);
+  gDT->Draw("L SAME");
+
+  c1->Update();
+}

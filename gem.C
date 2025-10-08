@@ -13,33 +13,19 @@
 #include "Garfield/ViewDrift.hh"
 #include "Garfield/AvalancheMicroscopic.hh"
 #include <TH2D.h>
+#include "Garfield/ViewMedium.hh"
+#include "Garfield/ViewCell.hh"
+#include <TGraph.h>
+#include "Garfield/AvalancheMC.hh"
+#include "Garfield/AvalancheMicroscopic.hh"
+#include "Garfield/TrackHeed.hh"
+#include "Garfield/DriftLineRKF.hh"
 
 using namespace Garfield;
 
 int main(int argc, char *argv[]) {
 
   TApplication app("app", &argc, argv);
-
-  // Define gas
-  MediumMagboltz* gas = new MediumMagboltz();
-  gas->SetComposition("Ar", 90., "CH4", 10.); 
-  gas->SetTemperature(293.15);
-  gas->SetPressure(760.);
-  gas->EnableDrift();
-
-  // Set the field range to be covered by the gas table.
-  const size_t nE = 20;
-  const double emin = 10.;
-  const double emax = 5000.;
-  // Flag to request logarithmic spacing.
-  constexpr bool useLog = true;
-  gas->SetFieldGrid(emin, emax, nE, useLog);
-
-  const int ncoll = 10;
-  // Run Magboltz to generate the gas table.
-  gas->GenerateGasTable(ncoll);
-  // Save the table.
-  gas->WriteGasFile("ar_90_ch4_10.gas");
 
   
   double mm = 1e-3;
@@ -70,6 +56,11 @@ int main(int argc, char *argv[]) {
   const double V_wire_far = -4.0 * kilovolt;  // parallel to last strip
 
 
+  MediumMagboltz* gas = new MediumMagboltz();
+  gas->LoadGasFile("../ar_90_ch4_10.gas");
+  gas->EnableDrift();
+  
+  
   // Create analytic field component
   ComponentAnalyticField* comp = new ComponentAnalyticField();
   comp->SetMedium(gas);
@@ -90,22 +81,6 @@ int main(int argc, char *argv[]) {
       std::cout << "Strip " << i << ": " << potentials[i] << " V" << std::endl;
     }
 
-    /*
-    for (int i = 0; i < nStrips; ++i) {
-    double cx = leftX + i * pitch;         // x center of strip
-    double stripPot = potentials[i];       // voltage for this strip
-    std::string label = "topPlane" + std::to_string(i);
-    comp->AddPlaneY(topY, stripPot, label);
-    }
-
-
-    for (int i = 0; i < nStrips; ++i) {
-    double cx = leftX + i * pitch;         // x center of strip
-    double stripPot = potentials[i];       // voltage for this strip
-    std::string label = "botPlane" + std::to_string(i);
-    comp->AddPlaneY(botY,stripPot, label);
-    }
-    */
 
     for (int i = 0; i < nStrips; ++i) {
     double cx = leftX + i * pitch;
@@ -129,16 +104,11 @@ int main(int argc, char *argv[]) {
 
     comp->AddReadout("Anode");
 
-    TCanvas* c1 = new TCanvas("c1", "Drift Chamber Geometry", 800, 600);
+  TCanvas* c1 = new TCanvas("c1", "Drift Chamber Geometry", 800, 600);
 
     comp->PlotCell(c1);
 
-
-   
-  Sensor* sensor = new Sensor();
-  sensor->AddComponent(comp);
-
-  ViewField* fieldView = new ViewField();
+   ViewField* fieldView = new ViewField();
   fieldView->SetComponent(comp);
   fieldView->SetNumberOfContours(50);
   double xminPlot = -2.0; //  leftX - 2 * pitch;
@@ -148,7 +118,63 @@ int main(int argc, char *argv[]) {
 
   fieldView->SetArea(xminPlot, yminPlot, xmaxPlot, ymaxPlot);
   fieldView->PlotContour("V");
+  
 
+   
+    Sensor* sensor = new Sensor();
+    sensor->AddComponent(comp);
+    sensor->AddElectrode(comp, "Anode");
+    const double tstep = 0.5;
+    const double tmin = -0.5 * tstep;
+    const unsigned int nbins = 1000;
+    sensor->SetTimeWindow(tmin, tstep, nbins);
+
+    // drift lines from a track
+    TrackHeed track(sensor);
+    track.SetParticle("muon");
+    track.SetEnergy(1.e9);
+  
+    DriftLineRKF drift(sensor);
+    const double x0 = 2.;
+    const double y0 = 0.5;
+    track.NewTrack(x0, y0, 0, 0, 0, 1, 0);
+
+    ViewDrift driftView;
+    driftView.SetArea(-5, -5, 5, 5);
+    drift.EnablePlotting(&driftView);
+    track.EnablePlotting(&driftView);
+    
+
+    // Loop over the clusters along the track.
+    std::cout << "Number of clusters: " << track.GetClusters().size() << "\n";
+    for (const auto& cluster : track.GetClusters()) {
+      // Loop over the electrons in the cluster.
+      //std::cout<<" electrons associ. w clusters = "<<cluster.electrons.size()<<"\n";
+      for (const auto& electron : cluster.electrons) {
+	drift.DriftElectron(electron.x, electron.y, electron.z, electron.t);
+      }
+    }
+    
+    
+   
+    TCanvas *c2 = new TCanvas("c2", "", 600, 600);
+
+    ViewCell cellView(comp);
+    cellView.SetCanvas(c2);
+    cellView.Plot2d();
+    driftView.SetCanvas(c2);
+    constexpr bool twod = true;
+    constexpr bool drawaxis = false;
+    driftView.Plot(twod, drawaxis);
+    
+    TCanvas *cS = new TCanvas("cS", "", 600, 600);
+    sensor->PlotSignal("Anode", cS);
+
+
+
+  std::cout << "Simulation finished.\n";
+
+  
   app.Run(true);
 
 }
