@@ -9,15 +9,14 @@
 void gas_plot() {
   using namespace Garfield;
 
-  // Load your precomputed Magboltz gas table
   MediumMagboltz* gas = new MediumMagboltz();
   if (!gas->LoadGasFile("ar_90_ch4_10.gas")) {
     std::cerr << "Error: could not load gas table." << std::endl;
   }
 
   std::vector<double> redField;    // E/P
-  std::vector<double> townsend;    // Townsend coefficient [1/cm]
-  std::vector<double> attachment;  // Attachment coefficient [1/cm]
+  std::vector<double> townsend;   
+  std::vector<double> attachment; 
   std::vector<double> fields;
   std::vector<double> vdrift;
   std::vector<double> diffL;
@@ -39,7 +38,7 @@ void gas_plot() {
    if (!gas->ElectronTownsend(e, 0., 0., bx, by, bz, alpha)) continue;
    if (!gas->ElectronAttachment(e, 0., 0., bx, by, bz, eta)) continue;
 
-   double ep = e / pressureTorr; // reduced field E/P [V/cm/Torr]
+   double ep = e / pressureTorr; 
 
    fields.push_back(e);
    redField.push_back(ep);
